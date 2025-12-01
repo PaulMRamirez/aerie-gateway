@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Aerie Gateway is the API gateway for [Aerie](https://github.com/NASA-AMMOS/aerie), NASA-AMMOS's mission planning and sequencing system. It provides authentication, file handling, GraphQL playground, and various API endpoints that interface with the Aerie backend services.
+PlanDev Gateway is the API gateway for [PlanDev](https://github.com/NASA-AMMOS/plandev), NASA-AMMOS's mission planning and sequencing system. It provides authentication, file handling, GraphQL playground, and various API endpoints that interface with the PlanDev backend services.
 
 ## Tech Stack
 

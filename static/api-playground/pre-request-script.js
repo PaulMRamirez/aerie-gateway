@@ -7,7 +7,7 @@ if (nowInSeconds() >= Number(tokenExpiry)) {
     'POST',
     '/auth/login', // AUTH ENDPOINT OF THE DEPLOYMENT
     {
-      body: { username: '<YOUR_AERIE_USERNAME>', password: '<YOUR_AERIE_PASSWORD>' }, // CREDENTIALS TO LOG IN AS
+      body: { username: '<YOUR_PLANDEV_USERNAME>', password: '<YOUR_PLANDEV_PASSWORD>' }, // CREDENTIALS TO LOG IN AS
       headers: { 'Content-Type': 'application/json' }
     });
   if(res.success) {

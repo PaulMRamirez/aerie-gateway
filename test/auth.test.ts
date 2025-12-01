@@ -67,11 +67,11 @@ describe('auth helper function tests', () => {
   });
 
   describe('reference example', () => {
-    const default_roles = ['viewer', 'user', 'aerie_admin'];
+    const default_roles = ['viewer', 'user', 'plandev_admin'];
     const group_role_mapping = {
       group_A: ['viewer', 'user'],
       group_B: ['user'],
-      group_C: ['aerie_admin', 'user'],
+      group_C: ['plandev_admin', 'user'],
       group_D: ['viewer'],
       group_E: ['some_other_role'],
     };
@@ -88,7 +88,7 @@ describe('auth helper function tests', () => {
       vi.stubEnv('AUTH_GROUP_ROLE_MAPPINGS', JSON.stringify(group_role_mapping));
 
       const group_C_roles = mapGroupsToRoles(['group_C']);
-      expect(group_C_roles.allowed_roles).toContain('aerie_admin');
+      expect(group_C_roles.allowed_roles).toContain('plandev_admin');
       expect(group_C_roles.allowed_roles).toContain('user');
       expect(group_C_roles.default_role).toBe('user');
     });

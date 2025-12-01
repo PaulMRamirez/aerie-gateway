@@ -12,7 +12,7 @@ export const auth = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-// Only permits `aerie_admin` users
+// Only permits `plandev_admin` users
 export const adminOnlyAuth = async (req: Request, res: Response, next: NextFunction) => {
   const authorizationHeader = req.get('authorization');
   const response = await session(authorizationHeader);
@@ -35,11 +35,11 @@ export const adminOnlyAuth = async (req: Request, res: Response, next: NextFunct
         res.status(401).send({ message: 'Declared role is not in allowed roles.' });
         return;
       }
-      if (role != 'aerie_admin') {
+      if (role != 'plandev_admin') {
         res.status(403).send({ message: 'Current active role is unauthorized.' });
         return;
       }
-    } else if (defaultRole != 'aerie_admin') {
+    } else if (defaultRole != 'plandev_admin') {
       res.status(403).send({ message: 'Current active role is unauthorized.' });
       return;
     }

@@ -1,13 +1,13 @@
-![GitHub package.json version](https://img.shields.io/github/package-json/v/NASA-AMMOS/aerie-gateway?color=brightgreen)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/NASA-AMMOS/plandev-gateway?color=brightgreen)
 
-# aerie-gateway
+# plandev-gateway
 
-The API gateway for [Aerie](https://github.com/NASA-AMMOS/aerie).
+The API gateway for [PlanDev](https://github.com/NASA-AMMOS/plandev).
 
 ## Need Help?
 
-- Join us on the [NASA-AMMOS Slack](https://join.slack.com/t/nasa-ammos/shared_invite/zt-1mlgmk5c2-MgqVSyKzVRUWrXy87FNqPw) (#aerie-users)
-- Contact aerie-support@googlegroups.com
+- Join us on the [NASA-AMMOS Slack](https://join.slack.com/t/nasa-ammos/shared_invite/zt-1mlgmk5c2-MgqVSyKzVRUWrXy87FNqPw) (#plandev-users)
+- Contact plandev-support@googlegroups.com
 
 ## Develop
 
@@ -23,7 +23,7 @@ npm run dev
 
 This will watch for code changes and rebuild and restart the gateway server automatically.
 
-If you are running Aerie Gateway within a container (i.e. the docker-compose from the main Aerie repo), run the following before starting the container:
+If you are running PlanDev Gateway within a container (i.e. the docker-compose from the main PlanDev repo), run the following before starting the container:
 
 ```sh
 npm install
